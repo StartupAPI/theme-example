@@ -43,7 +43,12 @@ UserConfig::$appName = 'Bootstrap 3 app';
 UserConfig::$theme = 'awesome';
 
 /**
+ * If specified, StartupAPI::head() will include this Twitter Bootstrap Theme instead of default one
+ */
+UserConfig::$bootstrapTheme = 'sandstone';
+
+/**
  * Enables developer tools beyond simple debugging
  * like Bootswatch theme switcher in 'awesome' theme, for example
  */
-#UserConfig::$DEVMODE = TRUE;
+UserConfig::$DEVMODE = TRUE;
