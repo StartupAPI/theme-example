@@ -6,6 +6,11 @@
 ##
 ######################################################
 
+/*
+ * Set timezone of the server
+ */
+date_default_timezone_set('America/New_York');
+
 /**
  * Source of randomness for security
  */
