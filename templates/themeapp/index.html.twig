@@ -109,6 +109,23 @@
 							You'll most likely want to override <a target="_blank" href="https://github.com/StartupAPI/users/tree/master/themes/awesome/templates/page.html.twig">page.html.twig</a> to have global header and footer overrides across the pages.
 						</p>
 					</li>
+					<li>
+						<p>
+							If you override global template, and use some variables there that you need to pass, set a config variable first:
+						</p>
+						<code>
+							UserConfig::$app_global_template_variables = array('current_menu' => 'homepage');
+						</code>
+						<p>
+							And retrieve them in "APP" sub-object in Twig
+						</p>
+						<code>
+							{{ '{{' }}APP.current_menu}}
+						</code>
+						<p>
+							This is commonly used to set current menu item in custom the nav, page title or display some other info in global nav.
+						</p>
+					</li>
 				</ul>
 			</div>
 		</div>
