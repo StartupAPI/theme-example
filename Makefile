@@ -11,7 +11,6 @@ endif
 
 updatecode:
 ifneq "$(wildcard .git )" ""
-	git pull origin master
 	git submodule init
 	git submodule update
 endif
